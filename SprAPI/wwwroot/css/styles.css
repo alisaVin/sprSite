@@ -1,0 +1,15 @@
+﻿html {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body {
+    margin: 0;
+    background-color: #181830;
+    color: #e0e1e2;
+    font-family: Tahoma;
+    font-size: 16px;
+}

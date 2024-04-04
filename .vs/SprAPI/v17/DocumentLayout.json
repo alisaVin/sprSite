@@ -1,0 +1,147 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\wwwroot\\css\\styles.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\wwwroot\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\wwwroot\\js\\index.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\springer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\springer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\sprdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\sprdb.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|c:\\users\\avinogradova\\vs_apps\\fabio_aufgaben\\sprapi\\sprapi\\models\\sprmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{660657DB-1E45-4763-BDF9-DF193C5B0561}|SprAPI\\SprAPI.csproj|solutionrelative:sprapi\\models\\sprmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 275,
+          "SelectedChildIndex": 3,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.js",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\js\\index.js",
+              "RelativeDocumentMoniker": "SprAPI\\wwwroot\\js\\index.js",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\js\\index.js",
+              "RelativeToolTip": "SprAPI\\wwwroot\\js\\index.js",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2024-04-04T13:15:07.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "styles.css",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\css\\styles.css",
+              "RelativeDocumentMoniker": "SprAPI\\wwwroot\\css\\styles.css",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\css\\styles.css",
+              "RelativeToolTip": "SprAPI\\wwwroot\\css\\styles.css",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAABAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-04-04T13:14:38.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\index.html",
+              "RelativeDocumentMoniker": "SprAPI\\wwwroot\\index.html",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\index.html",
+              "RelativeToolTip": "SprAPI\\wwwroot\\index.html",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAcAAAAGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2024-04-04T13:13:20.559Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Springer.cs",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\Springer.cs",
+              "RelativeDocumentMoniker": "SprAPI\\Springer.cs",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\Springer.cs",
+              "RelativeToolTip": "SprAPI\\Springer.cs",
+              "ViewState": "AQIAAAMAAAAAAAAAAAAAAAwAAAAzAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T11:26:14.059Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SprDb.cs",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\SprDb.cs",
+              "RelativeDocumentMoniker": "SprAPI\\SprDb.cs",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\SprDb.cs",
+              "RelativeToolTip": "SprAPI\\SprDb.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T06:22:41.967Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SprModel.cs",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\Models\\SprModel.cs",
+              "RelativeDocumentMoniker": "SprAPI\\Models\\SprModel.cs",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\Models\\SprModel.cs",
+              "RelativeToolTip": "SprAPI\\Models\\SprModel.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T06:17:13.709Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\Program.cs",
+              "RelativeDocumentMoniker": "SprAPI\\Program.cs",
+              "ToolTip": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\Program.cs",
+              "RelativeToolTip": "SprAPI\\Program.cs",
+              "ViewState": "AQIAABUAAAAAAAAAAAAcwCwAAAAVAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-04-04T06:12:00.044Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
