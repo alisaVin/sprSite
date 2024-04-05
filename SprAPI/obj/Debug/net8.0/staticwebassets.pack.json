@@ -1,0 +1,33 @@
+{
+  "Files": [
+    {
+      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\css\\styles.css",
+      "PackagePath": "staticwebassets\\css\\styles.css"
+    },
+    {
+      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\index.html",
+      "PackagePath": "staticwebassets\\index.html"
+    },
+    {
+      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\js\\index.js",
+      "PackagePath": "staticwebassets\\js\\index.js"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.SprAPI.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.SprAPI.props",
+      "PackagePath": "build\\SprAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.SprAPI.props",
+      "PackagePath": "buildMultiTargeting\\SprAPI.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.SprAPI.props",
+      "PackagePath": "buildTransitive\\SprAPI.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

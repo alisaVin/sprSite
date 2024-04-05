@@ -33,3 +33,5 @@ C:\Users\avinogradova\vs_apps\Fabio_Aufgaben\SprAPI\SprAPI\obj\Debug\net8.0\refi
 C:\Users\avinogradova\vs_apps\Fabio_Aufgaben\SprAPI\SprAPI\obj\Debug\net8.0\SprAPI.pdb
 C:\Users\avinogradova\vs_apps\Fabio_Aufgaben\SprAPI\SprAPI\obj\Debug\net8.0\SprAPI.genruntimeconfig.cache
 C:\Users\avinogradova\vs_apps\Fabio_Aufgaben\SprAPI\SprAPI\obj\Debug\net8.0\ref\SprAPI.dll
+C:\Users\avinogradova\vs_apps\Fabio_Aufgaben\SprAPI\SprAPI\bin\Debug\net8.0\SprAPI.staticwebassets.runtime.json
+C:\Users\avinogradova\vs_apps\Fabio_Aufgaben\SprAPI\SprAPI\obj\Debug\net8.0\SprAPI.sourcelink.json

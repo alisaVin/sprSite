@@ -8,8 +8,94 @@
 
 body {
     margin: 0;
-    background-color: #181830;
-    color: #e0e1e2;
-    font-family: Tahoma;
+    background-color: #0C0C0C;
+    color: whitesmoke;
+    font-family: Helvetica, Arial,  sans-serif;
     font-size: 16px;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 0;
+    color:#F2613F;
+}
+
+h4 {
+    text-align: center;
+    margin-top: 0;
+}
+
+p {
+    text-align: center;
+    margin-top: 0px;
+    margin-bottom: 18px;
+    font-size: 16px;
+}
+
+#field_output {
+    margin-top: 15px;
+}
+
+label {
+    font-size: 14px;
+}
+
+.label_margin {
+    margin-left: 30px;
+}
+
+.container {
+    padding: 30px;
+    display: block;
+    border: 7px solid #9B3922;
+    border-radius: 25px;
+    background-color: #481E14;
+}
+
+.field_div {
+    display: block;
+    justify-content: center;
+}
+
+.position_div {
+    margin-top: 45px;
+    display: block;
+    justify-content: center; 
+}
+
+.div_inline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    background-color: whitesmoke;
+    border-width: 2px;
+    border-radius: 10px;
+    color:#0C0C0C;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 16px;
+    padding-inline-start: 7px;
+    margin-left: 5px;
+    width: 50px;
+    height: 25px;
+}
+
+button {
+    display: block;
+    margin: 10px auto 10px auto;
+    border: 1px solid #F2613F;
+    border-radius: 5px;
+    background-color: #481E14;
+    color: #F2613F;
+    padding: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #F2613F;
+    border-color: #481E14;
+    color: #481E14;
 }

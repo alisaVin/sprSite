@@ -5,7 +5,36 @@
     <title>Springer</title>
     <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
+    <h2>Springer &#128052;</h2>
+    <h4>Gebe die Position des Springers auf dem Spielfeld ein.</h4>
+    <div class="container">
+        <div class="field_div">
+            <p>Wie groß soll der Feld sein? (max. 15 x 15)</p>
+            <div class="div_inline">
+                <label for="lenght_x">Länge (x):</label>
+                <input type="number" min="3" max="15" id="lenght_x" placeholder="3">
+                <label class="label_margin" for="width_y">Breite (y):</label>
+                <input type="number" min="3" max="15" id="width_y" placeholder="3">
+            </div>
+            <button id="output_button" onclick="giveOutput()">Bestätigen</button>
+            <p id="field_output"></p>
+        </div>
+    
+        <div class="position_div">
+            <p>Wo soll der Springer anfangen?</p>
+            <div class="div_inline">
+                <label for="start_x">Koordinate X:</label>
+                <input type="number" min="0" max="15" id="start_x" placeholder="0">
+                <label class="label_margin" for="start_y">Koordinate Y:</label>
+                <input type="number" max="15" id="start_y" placeholder="0">
+            </div>
+            <button id="submit_button" onclick="submitInput()">Los geht's!</button>
+        </div>
+    </div>
+
     <script src="js/index.js" asp-append-version="true"></script>
 </body>
+
 </html>
