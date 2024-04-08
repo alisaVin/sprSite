@@ -57,16 +57,11 @@ label {
     justify-content: center;
 }
 
-.position_div {
-    margin-top: 45px;
-    display: block;
-    justify-content: center; 
-}
-
 .div_inline {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 40px;
 }
 
 input {
@@ -84,7 +79,7 @@ input {
 
 button {
     display: block;
-    margin: 10px auto 10px auto;
+    margin: 0 auto 0 auto;
     border: 1px solid #F2613F;
     border-radius: 5px;
     background-color: #481E14;

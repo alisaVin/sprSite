@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SprAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Release")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+28291966e39f84f2ba0249aa93caa6d2d904b12c")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3848e8a3835a5943cc18773526a3a71d7c1cae1f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SprAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SprAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
