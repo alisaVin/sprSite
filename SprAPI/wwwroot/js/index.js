@@ -38,7 +38,7 @@ function submitInput() {
 
   .then(response => {
     if (response.ok){
-      alert("Der Springer läft 🐎")
+      alert("Das ist der Weg 🐎")
     } else {
       alert("Die Anfrage ist ungültig")
     }
@@ -48,18 +48,4 @@ function submitInput() {
   .catch(error => alert("Es hat ein Fehler aufgetreten", error))
 
   console.log(position);
-  
-/* 
- .then(response => {
-    if (response.ok){
-      alert("Der Springer läft 🐎")
-    } else {
-      alert("Die Anfrage ist ungültig")
-    }
-    response.json()
-  })
-
-  .then(data => console.log(data))
-  .catch(error => alert("Die Anfrage ist ungültig"))
-*/
 }

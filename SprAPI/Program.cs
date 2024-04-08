@@ -14,7 +14,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen(c =>
 {
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Springer API", Description = "Stelle die Startposition f�r den Springer ein", Version = "v1" });
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "Springer API", Description = "Stelle die Startposition für den Springer ein", Version = "v1" });
 });
 
 builder.Services.AddCors(options =>
@@ -35,8 +35,6 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "Springer API V1");
 });
-
-
 
 
 app.MapPost("/position", (SprModel sprModel) =>
