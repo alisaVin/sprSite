@@ -32,12 +32,28 @@ p {
     font-size: 16px;
 }
 
-#field_output {
-    margin-top: 15px;
-}
-
 label {
     font-size: 14px;
+}
+
+table {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    border: 2px solid #9B3922;
+    border-radius: 10px;
+    background-color: #F2613F;
+    border-radius: 5px;
+
+}
+
+td {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #481E14;
+    border-radius: 10px;
+    background-color: #9B3922;
 }
 
 .label_margin {
@@ -52,17 +68,18 @@ label {
     background-color: #481E14;
 }
 
-.field_div {
-    display: block;
-    justify-content: center;
-}
-
 .div_inline {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 40px;
 }
+
+#field_div {
+    display: block;
+    justify-content: center;
+}
+
 
 input {
     background-color: whitesmoke;
@@ -94,3 +111,4 @@ button:hover {
     border-color: #481E14;
     color: #481E14;
 }
+

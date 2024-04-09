@@ -40,7 +40,7 @@ function submitInput() {
     if (response.ok){
       alert("Das ist der Weg 🐎")
     } else {
-      alert("Die Anfrage ist ungültig")
+      alert("Da ist kein Weg...")
     }
     response.json()
   })
@@ -49,3 +49,39 @@ function submitInput() {
 
   console.log(position);
 }
+
+
+// 1. DIv leeren
+// 2. EInen neuen mit dem Spielfeld hinzufügen
+function createNewDiv() {
+
+  let input_lenght = document.getElementById('lenght_x').value;
+  let input_width = document.getElementById('width_y').value;
+  let inp_startX = document.getElementById('start_x').value;
+  let inp_startY = document.getElementById('start_y').value;
+  
+  var oldDiv = document.getElementById('field_div');
+  var gameField = document.createElement('table');
+
+  for (var i = 0; i < input_width; i++) {  
+    var tr = document.createElement('tr');
+
+    for (var j = 0; j < input_lenght; j++) {
+      var td = document.createElement('td');
+
+      tr.appendChild(td);
+    }
+    gameField.appendChild(tr);
+  }
+
+  gameField.id = "gameField";
+  //document.body.appendChild(gameField);
+  //neuesDiv.innerHTML = "<svg><p>1</p></svg>";
+  oldDiv.parentNode.replaceChild(gameField, oldDiv);
+}
+
+var submitButton = document.getElementById('submit_button');
+submitButton.addEventListener('click', function() {
+  submitInput();
+  createNewDiv();
+});
