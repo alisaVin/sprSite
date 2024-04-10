@@ -61,7 +61,8 @@ function createNewDiv() {
   let inp_startY = document.getElementById('start_y').value;
   
   var oldDiv = document.getElementById('field_div');
-  var gameField = document.createElement('table');
+  var gameField = document.createElement('div');
+  /*var gameField = document.createElement('table');
 
   for (var i = 0; i < input_width; i++) {  
     var tr = document.createElement('tr');
@@ -76,7 +77,36 @@ function createNewDiv() {
 
   gameField.id = "gameField";
   //document.body.appendChild(gameField);
-  //neuesDiv.innerHTML = "<svg><p>1</p></svg>";
+  //neuesDiv.innerHTML = "<svg><p>1</p></svg>";*/
+
+  for (var i = 0; i < input_lenght; i++) {
+    //gameField.style.gridTemplateColumns('auto');
+    for (var j = 0; j < input_width; j++) {
+      var zelle = document.createElement('div');
+      zelle.id = "zelle_" + i + "_" + j;
+      zelle.classList.add('zelleStyle'); 
+      gameField.appendChild(zelle);
+    }
+  }
+
+  var newColumns = "repeat(" + input_lenght + ", 55px)";
+  var newRows = "repeat(" + input_width + ", 55px)";
+
+  gameField.style.gridTemplateRows = newRows;
+  gameField.style.gridTemplateColumns = newColumns;
+  gameField.id = "gameField";
+
+  var id = "zelle_" + inp_startX + "_" + inp_startY;
+  var ersteZelle = document.getElementById(id);
+
+  //findet das Element nicht
+  if (ersteZelle !== null) {
+    console.log("Das Element wurde gefunden:", meinElement.textContent);
+} else {
+    console.log("Das Element wurde nicht gefunden.");
+}
+  //ersteZelle.style.backgroundColor = "red";
+
   oldDiv.parentNode.replaceChild(gameField, oldDiv);
 }
 

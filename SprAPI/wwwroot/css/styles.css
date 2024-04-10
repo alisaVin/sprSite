@@ -36,7 +36,7 @@ label {
     font-size: 14px;
 }
 
-table {
+/*table {
     display: grid;
     justify-content: center;
     align-items: center;
@@ -54,7 +54,7 @@ td {
     border: 2px solid #481E14;
     border-radius: 10px;
     background-color: #9B3922;
-}
+}*/
 
 .label_margin {
     margin-left: 30px;
@@ -62,7 +62,9 @@ td {
 
 .container {
     padding: 30px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     border: 7px solid #9B3922;
     border-radius: 25px;
     background-color: #481E14;
@@ -75,11 +77,33 @@ td {
     margin-bottom: 40px;
 }
 
+.div_inline:nth-of-type(2) {
+    margin-bottom: 20px;
+}
+
 #field_div {
     display: block;
     justify-content: center;
 }
 
+#gameField {
+    display: grid;
+    gap: 1px;
+    justify-content: center;
+    align-items: center;
+    width: max-content;
+    border: 2px solid #9B3922;
+    background-color: #F2613F;
+    border-radius: 5px;
+}
+
+.zelleStyle {
+    height: 50px;
+    width: 50px;
+    border: 2px solid #481E14;
+    border-radius: 10px;
+    background-color: #9B3922;
+}
 
 input {
     background-color: whitesmoke;
