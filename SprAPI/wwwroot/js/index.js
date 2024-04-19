@@ -38,7 +38,7 @@ function submitInput() {
 
   .then(response => {
     if (response.ok){
-      alert("Das ist der Weg 🐎")
+      alert("Der Springer hat den Weg in _ Sritte gefunden 🐎")
     } else {
       alert("Da ist kein Weg...")
     }
@@ -88,7 +88,6 @@ function createNewDiv() {
       gameField.appendChild(zelle);
     }
   }
-
   var newColumns = "repeat(" + input_lenght + ", 55px)";
   var newRows = "repeat(" + input_width + ", 55px)";
 
@@ -98,13 +97,6 @@ function createNewDiv() {
 
   var id = "zelle_" + inp_startX + "_" + inp_startY;
   var ersteZelle = document.getElementById(id);
-
-  //findet das Element nicht
-  if (ersteZelle !== null) {
-    console.log("Das Element wurde gefunden:", meinElement.textContent);
-} else {
-    console.log("Das Element wurde nicht gefunden.");
-}
   //ersteZelle.style.backgroundColor = "red";
 
   oldDiv.parentNode.replaceChild(gameField, oldDiv);
