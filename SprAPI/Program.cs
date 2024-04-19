@@ -44,13 +44,28 @@ app.MapPost("/position", (SprModel sprModel) =>
     int startX = sprModel.StartX;
     int startY = sprModel.StartY;
 
-    int[,] gamefield = new int[widthY, lenghtX];
+    int[,] gamefield = new int[lenghtX, widthY];
+    int[,] visited = new int[lenghtX, widthY];
 
-    SpringerMove.FreeStepsFromStart(lenghtX, widthY, startX, startY);
+for (int x = 0; x < gamefield.GetLength(0); x++)
+{
+    for (int y = 0; y < gamefield.GetLength(1); y++)
+    {
+        if (startX == x && startY == y)
+        {
+            visited[x, y] = 0;
+        }
+        else
+        {
+            visited[x, y] = -1;
+        }
+    }
+}
 
     SpringerMove result = new SpringerMove();
     //Ergebnis zurückgeben
-    return Results.Ok(result.GetTheWay(gamefield, 0, startX, startY, widthY, lenghtX));
+    return Results.Ok(result.GetTheWay(gamefield, 0, visited, startX, startY, widthY, lenghtX));
+    //return Results.Ok(result.);
 });
 
 app.UseDefaultFiles();
