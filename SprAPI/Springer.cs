@@ -13,7 +13,7 @@ namespace SpringerCode
     {
         public int[] xMoves = { -1, 1, 2, 2, 1, -1, -2, -2 };
         public int[] yMoves = { 2, 2, 1, -1, -2, -2, -1, 1 };
-        List<int> path = new List<int>();
+        public List<int> path = new List<int>();
 
         public bool GetTheWay(int[,] field, int stepNum, int[,] visited, int inpX_s, int inpY_s, int inpX_f, int inpY_f)
         {

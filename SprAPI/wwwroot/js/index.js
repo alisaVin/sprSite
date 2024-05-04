@@ -43,11 +43,24 @@ function submitInput() {
       alert("Da ist kein Weg...")
     }
     response.json()
+    console.log(response.json); //List<> anzeigen lassen
   })
 
   .catch(error => alert("Es hat ein Fehler aufgetreten", error))
 
   console.log(position);
+  
+
+  //response of array
+  /*fetch('http://localhost:5016/intlist')
+    .then(response => response.json())
+    .then(data => {
+        console.log(data); // Ausgabe der List<int> in der Browser-Konsole
+        // Führen Sie hier weitere Aktionen mit der List<int> durch
+    })
+    .catch(error => {
+        alert('Error:', error);
+    });*/
 }
 
 
