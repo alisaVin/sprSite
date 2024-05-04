@@ -1,15 +1,15 @@
 {
   "Files": [
     {
-      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\css\\styles.css",
+      "Id": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },
     {
-      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\index.html",
+      "Id": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\js\\index.js",
+      "Id": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\js\\index.js",
       "PackagePath": "staticwebassets\\js\\index.js"
     },
     {

@@ -105,6 +105,11 @@ td {
     background-color: #9B3922;
 }
 
+.zelleStyle.besucht {
+    border-color: #143e48;
+    background-color: #1f6070;
+}
+
 input {
     background-color: whitesmoke;
     border-width: 2px;

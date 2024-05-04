@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "p9Qi0TkjFEDKL0s4fcB6XlsCn0KUKg0lconLt0O2AB4=",
+  "Hash": "tD/YcCiYrZgBImyCSw2C7isdCIXXfrVNJm24103paaE=",
   "Source": "SprAPI",
   "BasePath": "_content/SprAPI",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "SprAPI\\wwwroot",
       "Source": "SprAPI",
-      "ContentRoot": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\",
       "BasePath": "_content/SprAPI",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\css\\styles.css",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\css\\styles.css",
       "SourceId": "SprAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\",
       "BasePath": "_content/SprAPI",
       "RelativePath": "css/styles.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot\\css\\styles.css"
     },
     {
-      "Identity": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\index.html",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\index.html",
       "SourceId": "SprAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\",
       "BasePath": "_content/SprAPI",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot\\index.html"
     },
     {
-      "Identity": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\js\\index.js",
+      "Identity": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\js\\index.js",
       "SourceId": "SprAPI",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\SprAPI\\SprAPI\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Lenovo\\Documents\\vs_apps\\sprSite\\SprAPI\\wwwroot\\",
       "BasePath": "_content/SprAPI",
       "RelativePath": "js/index.js",
       "AssetKind": "All",

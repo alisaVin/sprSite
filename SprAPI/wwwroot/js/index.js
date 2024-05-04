@@ -3,8 +3,8 @@
 const springerContainer = document.querySelector('.container')
 
 // function giveOutput() {
-//   let input_lenght = document.getElementById('lenght_x').value;
-//   let input_width = document.getElementById('width_y').value;
+//   let input_lenght = document.getElementById('length_x').value;
+//   let input_width = document.getElementById('length_x').value;
 //   input_lenght = parseInt(input_lenght);
 //   input_width = parseInt(input_width);
 
@@ -15,14 +15,14 @@ const springerContainer = document.querySelector('.container')
 //bearbeiten!!!
 function submitInput() {
 
-  let input_lenght = document.getElementById('lenght_x').value;
-  let input_width = document.getElementById('width_y').value;
+  let input_length = document.getElementById('length_x').value;
+  let input_width = input_length;
   let inp_startX = document.getElementById('start_x').value;
   let inp_startY = document.getElementById('start_y').value;
 
   var position = JSON.stringify(
     {
-      "lengthX": input_lenght,
+      "lengthX": input_length,
       "widthY": input_width,
       "startX": inp_startX,
       "startY": inp_startY
@@ -55,8 +55,8 @@ function submitInput() {
 // 2. EInen neuen mit dem Spielfeld hinzufügen
 function createNewDiv() {
 
-  let input_lenght = document.getElementById('lenght_x').value;
-  let input_width = document.getElementById('width_y').value;
+  let input_length = document.getElementById('length_x').value;
+  let input_width = input_length;
   let inp_startX = document.getElementById('start_x').value;
   let inp_startY = document.getElementById('start_y').value;
   
@@ -79,27 +79,30 @@ function createNewDiv() {
   //document.body.appendChild(gameField);
   //neuesDiv.innerHTML = "<svg><p>1</p></svg>";*/
 
-  for (var i = 0; i < input_lenght; i++) {
+  for (var i = 0; i < input_length; i++) {
     //gameField.style.gridTemplateColumns('auto');
     for (var j = 0; j < input_width; j++) {
       var zelle = document.createElement('div');
       zelle.id = "zelle_" + i + "_" + j;
-      zelle.classList.add('zelleStyle'); 
+      zelle.classList.add('zelleStyle');
       gameField.appendChild(zelle);
+      console.log(zelle.id)
     }
   }
-  var newColumns = "repeat(" + input_lenght + ", 55px)";
+  var newColumns = "repeat(" + input_length + ", 55px)";
   var newRows = "repeat(" + input_width + ", 55px)";
 
   gameField.style.gridTemplateRows = newRows;
   gameField.style.gridTemplateColumns = newColumns;
   gameField.id = "gameField";
 
-  var id = "zelle_" + inp_startX + "_" + inp_startY;
-  var ersteZelle = document.getElementById(id);
-  //ersteZelle.style.backgroundColor = "red";
-
   oldDiv.parentNode.replaceChild(gameField, oldDiv);
+
+  var id = "zelle_" + inp_startX+ "_" + inp_startY;
+  console.log(id);
+  var ersteZelle = document.getElementById(id);
+  console.log(ersteZelle);
+  ersteZelle.classList.add('besucht')
 }
 
 var submitButton = document.getElementById('submit_button');

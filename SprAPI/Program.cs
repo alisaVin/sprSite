@@ -40,7 +40,7 @@ app.UseSwaggerUI(c =>
 app.MapPost("/position", (SprModel sprModel) =>
 {
     int lenghtX = sprModel.LengthX;
-    int widthY = sprModel.WidthY;
+    int widthY = sprModel.LengthX;
     int startX = sprModel.StartX;
     int startY = sprModel.StartY;
 
