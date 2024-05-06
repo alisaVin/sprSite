@@ -68,19 +68,25 @@ app.MapPost("/position", (SprModel sprModel) =>
 
     if (success) 
     {
-        return Results.Json(new { Path = result.path});
+        return result.path.ToArray();
+        //return Results.Json(new { Path = result.path});
+    }
+    else
+    {
+        // Wenn success falsch ist, gib eine leere Liste zurück
+        return new List<int>().ToArray();
     }
     //Ergebnis zurückgeben
-    return Results.Ok("LEER");
+    //return results.Ok("LEER");
     //return Results.Ok(result.);
 });
 
 //HINZUGEFÜGT!!
-app.MapGet("/intlist", () =>
+/*app.MapGet("/intlist", () =>
 {
     SpringerMove pathResponse = new SpringerMove();
     return Results.Ok(pathResponse.path);
-});
+});*/
 
 app.UseDefaultFiles();
 app.UseStaticFiles();

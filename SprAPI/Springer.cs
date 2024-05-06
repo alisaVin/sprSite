@@ -49,11 +49,11 @@ namespace SpringerCode
                 {   
                     stepNum++;
                     visited[testX, testY] = stepNum;
-                    Console.Write($" {visited[testX, testY]} ");
+                    //Console.Write($" {visited[testX, testY]} ");
 
                     if (GetTheWay(field, stepNum, visited, testX, testY, inpY_f, inpX_f))
                     {
-                        path.Add(stepNum);
+                        //path.Add(stepNum);
                         return true;
                     }
                     else

@@ -1,4 +1,4 @@
-﻿const url = 'http://localhost:5000/position';
+﻿const url = 'http://localhost:5016/position';
 
 const springerContainer = document.querySelector('.container')
 
@@ -28,7 +28,7 @@ function submitInput() {
       "startY": inp_startY
     });
     
-  fetch('http://localhost:5016/position', {
+  fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -42,15 +42,21 @@ function submitInput() {
     } else {
       alert("Da ist kein Weg...")
     }
-    response.json()
-    console.log(response.json); //List<> anzeigen lassen
+    const responseList = response.json();
+    console.log(responseList);
+    /*const responseOutput = response.json();
+    const data = responseOutput;
+    console.log(data);*/
   })
+  /*.then(data => {
+    const responseList = data;
+    console.log(responseList);
+  })*/
 
   .catch(error => alert("Es hat ein Fehler aufgetreten", error))
 
   console.log(position);
   
-
   //response of array
   /*fetch('http://localhost:5016/intlist')
     .then(response => response.json())
@@ -63,9 +69,6 @@ function submitInput() {
     });*/
 }
 
-
-// 1. DIv leeren
-// 2. EInen neuen mit dem Spielfeld hinzufügen
 function createNewDiv() {
 
   let input_length = document.getElementById('length_x').value;
@@ -75,22 +78,6 @@ function createNewDiv() {
   
   var oldDiv = document.getElementById('field_div');
   var gameField = document.createElement('div');
-  /*var gameField = document.createElement('table');
-
-  for (var i = 0; i < input_width; i++) {  
-    var tr = document.createElement('tr');
-
-    for (var j = 0; j < input_lenght; j++) {
-      var td = document.createElement('td');
-
-      tr.appendChild(td);
-    }
-    gameField.appendChild(tr);
-  }
-
-  gameField.id = "gameField";
-  //document.body.appendChild(gameField);
-  //neuesDiv.innerHTML = "<svg><p>1</p></svg>";*/
 
   for (var i = 0; i < input_length; i++) {
     //gameField.style.gridTemplateColumns('auto');
@@ -116,6 +103,7 @@ function createNewDiv() {
   var ersteZelle = document.getElementById(id);
   console.log(ersteZelle);
   ersteZelle.classList.add('besucht')
+
 }
 
 var submitButton = document.getElementById('submit_button');
@@ -123,3 +111,17 @@ submitButton.addEventListener('click', function() {
   submitInput();
   createNewDiv();
 });
+/* async function AsyncGetMoves() {
+    const response = await fetch(url);
+    const json = await response.json();
+    const mydata = json;
+    console.log(mydata)
+ 
+    // 3. Generate the Field
+    GenerateChessfield()
+    // 4. Style Field
+    StyleChessfield()
+    // 5. Write API Data to the Boxes
+    ParseInput(mydata)
+}
+*/ 
