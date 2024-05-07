@@ -1,10 +1,10 @@
 ﻿const url = 'http://localhost:5016/position';
 
 const springerContainer = document.querySelector('.container')
-const sprPath = new Array();
+let sprPath = [];
 
 //bearbeiten!!!
-function submitInput() {
+async function submitInput() {
 
   let input_length = document.getElementById('length_x').value;
   let input_width = input_length;
@@ -19,7 +19,35 @@ function submitInput() {
       "startY": inp_startY
     });
     
-  fetch(url, {
+  try {
+    const response = await fetch(url, {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: position
+    });
+
+    if (!response.ok) {
+      throw new Error("Es hat ein Fehler aufgetreten");
+    }
+
+    const responseList = await response.json();
+    const pathArray = Object.values(responseList);
+    sprPath.push(...pathArray); 
+    let sprLen = sprPath.length - 1;
+    if (response.ok){
+      alert("Der Springer hat den Weg in " + sprLen + " gefunden 🐎")
+    } else {
+      alert("Da ist kein Weg...")
+    }
+    console.log(sprPath);
+  } catch (error) {
+    alert("Es hat ein Fehler aufgetreten", error);
+  }
+}
+
+ /* fetch(url, {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json'
@@ -29,34 +57,34 @@ function submitInput() {
 
   .then(response => {
     if (response.ok){
-      alert("Der Springer hat den Weg in _ Sritte gefunden 🐎")
+      alert("Der Springer hat den Weg gefunden 🐎")
     } else {
       alert("Da ist kein Weg...")
     }
     return response.json();
   })
+
   .then(responseList => {
     const pathArray = Object.values(responseList);
-    for (let i = 0; i < pathArray.length; i++) {
+    //console.log(pathArray);
+    for (let p = 0; p < pathArray.length; p++) {
+      sprPath.push(pathArray[p]);
+    }
+    console.log(sprPath);
+    //console.log(sprPath);
+    //console.log(typeof(sprPath));
+    // sprPath = pathArray.map(item => item.value);
+    // console.log(typeof(sprPath));
+    /*for (let i = 0; i < pathArray.length; i++) {
       //console.log(pathArray[i]);
       sprPath.push(pathArray[i]);
     }
-  })
+    return sprPath;
+  })*/
 
-  .catch(error => alert("Es hat ein Fehler aufgetreten", error))
-  console.log(position);
+  // .catch(error => alert("Es hat ein Fehler aufgetreten", error))
+  // console.log(position);
 
-  //response of array
-  /*fetch('http://localhost:5016/intlist')
-    .then(response => response.json())
-    .then(data => {
-        console.log(data); // Ausgabe der List<int> in der Browser-Konsole
-        // Führen Sie hier weitere Aktionen mit der List<int> durch
-    })
-    .catch(error => {
-        alert('Error:', error);
-    });*/
-}
 
 
 
@@ -91,37 +119,64 @@ function createNewDiv() {
   var ersteZelle = document.getElementById(id);
   ersteZelle.classList.add('besucht')
 
+  var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
+  //const gameFieldChild = Array.from(document.getElementById('gameField'));
+  console.log(sprPath);
+  console.log(gameFieldChild);
+  for (let p = 0; p < gameFieldChild.length; p++) {
+    if (p < sprPath.length) { // Stellen Sie sicher, dass p innerhalb des gültigen Bereichs von sprPath liegt
+      let newIdZelle = gameFieldChild[p];
+      newIdZelle.id = sprPath[p];
+      console.log(sprPath[p]);
+    } else {
+      console.log('Index außerhalb des Bereichs von sprPath');
+    }
+    /*for (let m = 0; m < sprPath.length; m++) {
+      let numID = sprPath[m];
+      newIdZelle.id = numID;
+      //console.log(newIdZelle.id);
+      //zelle.id = newIdZelle.id;
+    } 
+    //console.log(newIdZelle.id);*/
+  }
+  console.log(zelle.id);
+
+
 //BEARBEITEN!!!
- var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
+ /*var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
   for (let p = 0; p < gameFieldChild.length; p++) {
     let newIdZelle = gameFieldChild[p];
-    for (let m = 0; m < sprPath.length; m++) {
-      newIdZelle.id = sprPath[m];
-      zelle.id = newIdZelle.id;
-      console.log(zelle.id);
-    }
-    
+    console.log(newIdZelle);
+    /*for (let m = 0; m < sprPath.length; m++) {
+      let numID = sprPath[m];
+      newIdZelle.id = numID;
+      //console.log(newIdZelle.id);
+      //zelle.id = newIdZelle.id;
+    } 
+    //console.log(newIdZelle.id);
   }
-
-  var pathID = zelle.id;
+  var pathID = zelle.id;*/
 }
+
+/*function newID() {
+  var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
+  for (let p = 0; p < gameFieldChild.length; p++) {
+    let newIdZelle = gameFieldChild[p];
+    console.log(newIdZelle);
+    newIdZelle.id = sprPath[p];
+    console.log(newIdZelle.id);
+    /*for (let m = 0; m < sprPath.length; m++) {
+      let numID = sprPath[m];
+      newIdZelle.id = numID;
+      //console.log(newIdZelle.id);
+      //zelle.id = newIdZelle.id;
+    } 
+    //console.log(newIdZelle.id);
+  }
+}*/
 
 var submitButton = document.getElementById('submit_button');
-submitButton.addEventListener('click', function() {
-  submitInput();
+submitButton.addEventListener('click', async function() {
+  await submitInput();
   createNewDiv();
 });
-/* async function AsyncGetMoves() {
-    const response = await fetch(url);
-    const json = await response.json();
-    const mydata = json;
-    console.log(mydata)
- 
-    // 3. Generate the Field
-    GenerateChessfield()
-    // 4. Style Field
-    StyleChessfield()
-    // 5. Write API Data to the Boxes
-    ParseInput(mydata)
-}
-*/ 
