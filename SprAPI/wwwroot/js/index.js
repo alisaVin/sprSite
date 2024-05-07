@@ -46,6 +46,7 @@ async function submitInput() {
   }
 }
 
+
 function createNewDiv() {
 
   let input_length = document.getElementById('length_x').value;
@@ -94,7 +95,7 @@ function createNewDiv() {
     setTimeout(() => {
       blaueZelle.classList.add('besucht');
       blaueZelle.innerHTML = '<h4>' + s + ' &#128052;</h4>';
-    }, 800 * (s + 1));
+    }, 400 * (s + 1));
     blaueZelle.innerHTML = ' ';
   }
 
