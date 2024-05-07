@@ -35,12 +35,14 @@ async function submitInput() {
     const pathArray = Object.values(responseList);
     sprPath.push(...pathArray); 
     let sprLen = sprPath.length - 1;
+
     if (response.ok){
       alert("Der Springer hat den Weg in " + sprLen + " gefunden 🐎")
     } else {
       alert("Da ist kein Weg...")
     }
     console.log(sprPath);
+    
   } catch (error) {
     alert("Es hat ein Fehler aufgetreten", error);
   }
@@ -66,6 +68,7 @@ function createNewDiv() {
       gameField.appendChild(zelle);
     }
   }
+
   var newColumns = "repeat(" + input_length + ", 55px)";
   var newRows = "repeat(" + input_width + ", 55px)";
   gameField.style.gridTemplateRows = newRows;
@@ -78,7 +81,7 @@ function createNewDiv() {
   ersteZelle.classList.add('besucht')
 
   var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
-  console.log(sprPath);
+
   for (let p = 0; p < gameFieldChild.length; p++) {
     if (p < sprPath.length) { 
       let newIdZelle = gameFieldChild[p];
@@ -87,18 +90,16 @@ function createNewDiv() {
       console.log('Index außerhalb des Bereichs von sprPath');
     }
   }
-  console.log(zelle.id);
-  console.log(gameFieldChild);
+  //console.log(zelle.id);
+  //console.log(gameFieldChild);
 
   for (let s = 0; s < gameFieldChild.length; s++) {
     let blaueZelle = document.getElementById(s);
     setTimeout(() => {
       blaueZelle.classList.add('besucht');
       blaueZelle.innerHTML = '<h4>' + s + ' &#128052;</h4>';
-    }, 400 * (s + 1));
-    blaueZelle.innerHTML = ' ';
+    }, 600 * (s + 1));
   }
-
 }
 
 var submitButton = document.getElementById('submit_button');
