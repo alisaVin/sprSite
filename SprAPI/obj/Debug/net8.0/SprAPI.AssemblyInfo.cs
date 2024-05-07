@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SprAPI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b7d25d0625acc2488ddb9fe5ab46c7d83e2faa08")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+535d87dd70a7a75a2679e837b9ac6053927eb8f1")]
 [assembly: System.Reflection.AssemblyProductAttribute("SprAPI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SprAPI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

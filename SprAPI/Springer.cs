@@ -21,10 +21,6 @@ namespace SpringerCode
 
             if (stepNum == freeSteps - 1)
             {
-                Console.WriteLine(" ");
-                Console.WriteLine("Das war der Weg!");
-                Console.WriteLine($"Der Springer hat den Weg in {stepNum} Sritte gefunden");
-                Console.WriteLine(" ");
 
                 foreach (int step in visited)
                 {
@@ -36,7 +32,6 @@ namespace SpringerCode
                     Console.Write($"{p} ");
                 }
 
-                Console.WriteLine(" ");
                 return true;
             }
 
@@ -49,7 +44,6 @@ namespace SpringerCode
                 {   
                     stepNum++;
                     visited[testX, testY] = stepNum;
-                    //Console.Write($" {visited[testX, testY]} ");
 
                     if (GetTheWay(field, stepNum, visited, testX, testY, inpY_f, inpX_f))
                     {
@@ -58,16 +52,12 @@ namespace SpringerCode
                     }
                     else
                     {
-                        Console.Write($"Zurück");
                         stepNum--;
                         path.Remove(stepNum - 1);
                         visited[testX, testY] = -1;
                     }
                 }
             }
-
-            Console.WriteLine(" ");
-            Console.WriteLine("Da ist kein Weg...");
             return false;
         }
     }
