@@ -3,7 +3,6 @@
 const springerContainer = document.querySelector('.container')
 let sprPath = [];
 
-//bearbeiten!!!
 async function submitInput() {
 
   let input_length = document.getElementById('length_x').value;
@@ -47,47 +46,6 @@ async function submitInput() {
   }
 }
 
- /* fetch(url, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json'
-    },
-    body: position
-  })  
-
-  .then(response => {
-    if (response.ok){
-      alert("Der Springer hat den Weg gefunden 🐎")
-    } else {
-      alert("Da ist kein Weg...")
-    }
-    return response.json();
-  })
-
-  .then(responseList => {
-    const pathArray = Object.values(responseList);
-    //console.log(pathArray);
-    for (let p = 0; p < pathArray.length; p++) {
-      sprPath.push(pathArray[p]);
-    }
-    console.log(sprPath);
-    //console.log(sprPath);
-    //console.log(typeof(sprPath));
-    // sprPath = pathArray.map(item => item.value);
-    // console.log(typeof(sprPath));
-    /*for (let i = 0; i < pathArray.length; i++) {
-      //console.log(pathArray[i]);
-      sprPath.push(pathArray[i]);
-    }
-    return sprPath;
-  })*/
-
-  // .catch(error => alert("Es hat ein Fehler aufgetreten", error))
-  // console.log(position);
-
-
-
-
 function createNewDiv() {
 
   let input_length = document.getElementById('length_x').value;
@@ -105,7 +63,6 @@ function createNewDiv() {
       zelle.id = "zelle_" + i + "_" + j;
       zelle.classList.add('zelleStyle');
       gameField.appendChild(zelle);
-      //console.log(zelle.id)
     }
   }
   var newColumns = "repeat(" + input_length + ", 55px)";
@@ -120,60 +77,28 @@ function createNewDiv() {
   ersteZelle.classList.add('besucht')
 
   var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
-  //const gameFieldChild = Array.from(document.getElementById('gameField'));
   console.log(sprPath);
-  console.log(gameFieldChild);
   for (let p = 0; p < gameFieldChild.length; p++) {
-    if (p < sprPath.length) { // Stellen Sie sicher, dass p innerhalb des gültigen Bereichs von sprPath liegt
+    if (p < sprPath.length) { 
       let newIdZelle = gameFieldChild[p];
       newIdZelle.id = sprPath[p];
-      console.log(sprPath[p]);
     } else {
       console.log('Index außerhalb des Bereichs von sprPath');
     }
-    /*for (let m = 0; m < sprPath.length; m++) {
-      let numID = sprPath[m];
-      newIdZelle.id = numID;
-      //console.log(newIdZelle.id);
-      //zelle.id = newIdZelle.id;
-    } 
-    //console.log(newIdZelle.id);*/
   }
   console.log(zelle.id);
+  console.log(gameFieldChild);
 
-
-//BEARBEITEN!!!
- /*var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
-  for (let p = 0; p < gameFieldChild.length; p++) {
-    let newIdZelle = gameFieldChild[p];
-    console.log(newIdZelle);
-    /*for (let m = 0; m < sprPath.length; m++) {
-      let numID = sprPath[m];
-      newIdZelle.id = numID;
-      //console.log(newIdZelle.id);
-      //zelle.id = newIdZelle.id;
-    } 
-    //console.log(newIdZelle.id);
+  for (let s = 0; s < gameFieldChild.length; s++) {
+    let blaueZelle = document.getElementById(s);
+    setTimeout(() => {
+      blaueZelle.classList.add('besucht');
+      blaueZelle.innerHTML = '<h4>' + s + ' &#128052;</h4>';
+    }, 800 * (s + 1));
+    blaueZelle.innerHTML = ' ';
   }
-  var pathID = zelle.id;*/
+
 }
-
-/*function newID() {
-  var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
-  for (let p = 0; p < gameFieldChild.length; p++) {
-    let newIdZelle = gameFieldChild[p];
-    console.log(newIdZelle);
-    newIdZelle.id = sprPath[p];
-    console.log(newIdZelle.id);
-    /*for (let m = 0; m < sprPath.length; m++) {
-      let numID = sprPath[m];
-      newIdZelle.id = numID;
-      //console.log(newIdZelle.id);
-      //zelle.id = newIdZelle.id;
-    } 
-    //console.log(newIdZelle.id);
-  }
-}*/
 
 var submitButton = document.getElementById('submit_button');
 submitButton.addEventListener('click', async function() {
