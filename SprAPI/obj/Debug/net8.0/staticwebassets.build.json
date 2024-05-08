@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "Lw7AkUREapp5WIqGx/Zae9DGnloIH7eko/HI3F5blSY=",
+  "Hash": "e2U68JgJ/EYfugDPRrCXX3tjkPvhyw4d6bdr10yX1Gw=",
   "Source": "SprAPI",
   "BasePath": "_content/SprAPI",
   "Mode": "Default",
@@ -16,6 +16,44 @@
     }
   ],
   "Assets": [
+    {
+      "Identity": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\css\\favicon-16x16.png",
+      "SourceId": "SprAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\",
+      "BasePath": "_content/SprAPI",
+      "RelativePath": "css/favicon-16x16.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\favicon-16x16.png"
+    },
+    {
+      "Identity": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\css\\piece@1x-1.0s-200px-200px.png",
+      "SourceId": "SprAPI",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\",
+      "BasePath": "_content/SprAPI",
+      "RelativePath": "css/piece@1x-1.0s-200px-200px.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "PreferTarget",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\piece@1x-1.0s-200px-200px.png"
+    },
     {
       "Identity": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\css\\styles.css",
       "SourceId": "SprAPI",

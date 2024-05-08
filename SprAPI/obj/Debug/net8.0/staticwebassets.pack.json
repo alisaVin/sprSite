@@ -1,6 +1,14 @@
 {
   "Files": [
     {
+      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\css\\favicon-16x16.png",
+      "PackagePath": "staticwebassets\\css\\favicon-16x16.png"
+    },
+    {
+      "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\css\\piece@1x-1.0s-200px-200px.png",
+      "PackagePath": "staticwebassets\\css\\piece@1x-1.0s-200px-200px.png"
+    },
+    {
       "Id": "C:\\Users\\avinogradova\\vs_apps\\Fabio_Aufgaben\\sprSite\\sprAPI\\wwwroot\\css\\styles.css",
       "PackagePath": "staticwebassets\\css\\styles.css"
     },

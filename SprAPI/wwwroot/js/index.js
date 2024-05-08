@@ -1,14 +1,18 @@
 ﻿const url = 'http://localhost:5016/position';
 
-const springerContainer = document.querySelector('.container')
+const springerContainer = document.querySelector('.container');
+const loader = document.querySelector('.loading');
+const overlay = document.getElementById('overlay');
+const loading = document.getElementById('loadingAnimation');
 let sprPath = [];
+
 
 async function submitInput() {
 
   let input_length = document.getElementById('length_x').value;
   let input_width = input_length;
   let inp_startX = document.getElementById('start_x').value;
-  let inp_startY = document.getElementById('start_y').value;
+  let inp_startY = document.getElementById('start_y').value; 
 
   var position = JSON.stringify(
     {
@@ -34,11 +38,14 @@ async function submitInput() {
     const responseList = await response.json();
     const pathArray = Object.values(responseList);
     sprPath.push(...pathArray); 
+    
     let sprLen = sprPath.length - 1;
-
-    if (response.ok){
+    if (response.ok && sprLen > 0){
       alert("Der Springer hat den Weg in " + sprLen + " gefunden 🐎")
-    } else {
+    } else if (response.ok && sprLen < 0) {
+      alert("Da ist kein Weg...")
+    }
+    else {
       alert("Da ist kein Weg...")
     }
     console.log(sprPath);
@@ -76,12 +83,11 @@ function createNewDiv() {
   oldDiv.parentNode.replaceChild(gameField, oldDiv);
 
   var id = "zelle_" + inp_startX+ "_" + inp_startY;
-  //console.log(id);
   var ersteZelle = document.getElementById(id);
   ersteZelle.classList.add('besucht')
 
-  var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
 
+  var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
   for (let p = 0; p < gameFieldChild.length; p++) {
     if (p < sprPath.length) { 
       let newIdZelle = gameFieldChild[p];
@@ -90,8 +96,6 @@ function createNewDiv() {
       console.log('Index außerhalb des Bereichs von sprPath');
     }
   }
-  //console.log(zelle.id);
-  //console.log(gameFieldChild);
 
   for (let s = 0; s < gameFieldChild.length; s++) {
     let blaueZelle = document.getElementById(s);
@@ -102,8 +106,14 @@ function createNewDiv() {
   }
 }
 
-var submitButton = document.getElementById('submit_button');
-submitButton.addEventListener('click', async function() {
-  await submitInput();
-  createNewDiv();
+document.addEventListener('DOMContentLoaded', function() {
+  var submitButton = document.getElementById('submit_button');
+  submitButton.addEventListener('click', async function() {
+    overlay.style.display = 'block';
+    loading.style.display = 'block';
+    await submitInput();
+    loading.style.display = 'none';
+    overlay.style.display = 'none';
+    createNewDiv();
+  });
 });
