@@ -38,7 +38,7 @@ async function submitInput() {
     const responseList = await response.json();
     const pathArray = Object.values(responseList);
     sprPath.push(...pathArray); 
-    
+
     let sprLen = sprPath.length - 1;
     if (response.ok && sprLen > 0){
       alert("Der Springer hat den Weg in " + sprLen + " gefunden 🐎")
@@ -85,7 +85,6 @@ function createNewDiv() {
   var id = "zelle_" + inp_startX+ "_" + inp_startY;
   var ersteZelle = document.getElementById(id);
   ersteZelle.classList.add('besucht')
-
 
   var gameFieldChild = document.getElementById('gameField').getElementsByTagName('div');
   for (let p = 0; p < gameFieldChild.length; p++) {
