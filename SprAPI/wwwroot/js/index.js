@@ -41,7 +41,7 @@ async function submitInput() {
 
     let sprLen = sprPath.length - 1;
     if (response.ok && sprLen > 0){
-      alert("Der Springer hat den Weg in " + sprLen + " gefunden 🐎")
+      alert("Der Springer hat den Weg in " + sprLen + " Schritten gefunden 🐎")
     } else if (response.ok && sprLen < 0) {
       alert("Da ist kein Weg...")
     }
